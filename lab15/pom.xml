@@ -4,8 +4,8 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>lab15.sict.must.edu.mn</groupId>
-    <artifactId>calculator</artifactId>
+    <groupId>com.nar.lab15</groupId>
+    <artifactId>lab15</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

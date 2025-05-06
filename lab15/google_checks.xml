@@ -4,8 +4,10 @@
     "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
 <module name="Checker">
+    <!-- FileTabCharacter must be directly under Checker -->
+    <module name="FileTabCharacter"/>
+
     <module name="TreeWalker">
-        <module name="FileTabCharacter"/>
         <module name="LineLength">
             <property name="max" value="100"/>
         </module>

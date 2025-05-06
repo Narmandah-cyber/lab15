@@ -65,6 +65,16 @@
             <configuration>
                 <!-- Set coverage threshold to 50% -->
                 <minimum>50</minimum>
+                <rules>
+                    <rule>
+                        <element>CLASS</element>
+                        <limit>
+                            <counter>METHOD</counter>
+                            <value>COVEREDRATIO</value>
+                            <minimum>0.50</minimum>
+                        </limit>
+                    </rule>
+                </rules>
             </configuration>
         </execution>
     </executions>

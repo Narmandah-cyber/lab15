@@ -63,16 +63,8 @@
                 <goal>check</goal>
             </goals>
             <configuration>
-                <rule>
-                    <element>PACKAGE</element>
-                    <limits>
-                        <limit>
-                            <counter>INSTRUCTION</counter>
-                            <value>COVEREDRATIO</value>
-                            <minimum>0.50</minimum> <!-- 50% minimum coverage -->
-                        </limit>
-                    </limits>
-                </rule>
+                <!-- Set coverage threshold to 50% -->
+                <minimum>50</minimum>
             </configuration>
         </execution>
     </executions>

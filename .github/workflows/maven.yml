@@ -26,9 +26,9 @@ jobs:
         working-directory: lab15
         run: mvn checkstyle:check
 
-      - name: JUnit Тест ба JaCoCo Coverage Шалгах
+      - name: JUnit Test and JaCoCo Coverage Check
         working-directory: lab15
-        run: mvn test jacoco:check
+        run: mvn verify
 
       - name: JaCoCo Тайлан Үүсгэх
         working-directory: lab15

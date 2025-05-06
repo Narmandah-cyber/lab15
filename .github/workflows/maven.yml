@@ -17,16 +17,19 @@ jobs:
         with:
           java-version: '22'
           distribution: 'temurin'
-          
+
       - name: Build with Maven
         working-directory: lab15
         run: mvn -B package
 
       - name: Checkstyle Шалгах
+        working-directory: lab15
         run: mvn checkstyle:check
 
       - name: JUnit Тест ба JaCoCo Coverage Шалгах
+        working-directory: lab15
         run: mvn test jacoco:check
 
       - name: JaCoCo Тайлан Үүсгэх
+        working-directory: lab15
         run: mvn jacoco:report

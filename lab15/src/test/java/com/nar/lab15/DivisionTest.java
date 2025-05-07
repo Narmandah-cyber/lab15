@@ -19,7 +19,7 @@ public class DivisionTest {
         IllegalArgumentException.class,
         () -> calc.divide(4.0, 0.0)
     );
-    assertEquals("Тэгээр хуваах боломжгүй", exception.getMessage());
+    assertEquals("Тоог 0-д хуваах боломжгүй", exception.getMessage());
 }
 
 }
